@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, #253640 10%, rgba(31, 73, 96, 0) 81.42%), url(img/nastuh-abootalebi-ZtC4_rPCRXA-unsplash\ 1.jpg) no-repeat;
+  background-position: left center;
+  background-size: cover;
+  overflow: hidden;
+}
+.wrapper::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 35vh;
+  height: 35vh;
+  background: #24C647;
+  border-radius: 50%;
+  transform: translate(20%, 0%);
+  filter: blur(300px);
+  opacity: .6;
+}
+#vector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: left center;
+}
+.banner-container {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-58%);
+  color: #ffffff;
+}
+.banner-subtitle {
+  width: 45vw;
+}
+
+@media (max-width: 1088px) {
+  h1 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 721px) {
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .banner-subtitle {
+    width: 65vw;
+  }
+}
+@media (max-width: 426px) {
+  .banner-subtitle {
+    width: 80vw;
+  }
+}
