@@ -5,3 +5,7 @@ const vectorIcon = new Vivus(
     duration: 30000,
   }
 );
+
+window.onload = () => {
+  vectorIcon.play();
+};
